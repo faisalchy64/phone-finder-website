@@ -2,7 +2,17 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+/* header component */
 #search-btn {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+}
+
+/* main component */
+.card {
+    border-radius: 25px;
+}
+
+#see-more-btn {
+    display: none;
 }
