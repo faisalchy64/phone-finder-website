@@ -14,10 +14,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- css link -->
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Phone Finder</title>
+    <title>PhoFinder</title>
 </head>
 
 <body>
+    <!-- header component -->
+    <header>
+        <h1 id="brand" class="p-3">PhoFinder</h1>
+        <p class="p-3 text-center lead">PhoFinder is a smartphone finder website, <br> where you can find your desire
+            smartphone phone and see the specification.</p>
+
+        <div class="container d-flex justify-content-center">
+            <input type="text" id="input-box" class="w-50 px-2 rounded-start rounded-end-0"
+                placeholder="Search your phone...">
+            <button onclick="searchInput()" id="search-btn" class="btn btn-lg btn-primary">Search</button>
+        </div>
+    </header>
 
 
     <!-- bootstrap script cdn -->
