@@ -25,11 +25,20 @@
             smartphone phone and see the specification.</p>
 
         <div class="container d-flex justify-content-center">
-            <input type="text" id="input-box" class="w-50 px-2 rounded-start rounded-end-0"
-                placeholder="Search your phone...">
+            <input type="text" id="input-box" class="w-50 px-2 rounded-start" placeholder="Search your phone...">
             <button onclick="searchInput()" id="search-btn" class="btn btn-lg btn-primary">Search</button>
         </div>
     </header>
+
+    <!-- main component -->
+    <main>
+        <!-- show search result -->
+        <section>
+            <div class="container">
+                <div id="result-container" class="row g-4"></div>
+            </div>
+        </section>
+    </main>
 
 
     <!-- bootstrap script cdn -->
