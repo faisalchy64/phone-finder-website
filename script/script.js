@@ -2,7 +2,7 @@
 const input = document.getElementById("input-box");
 const resultContainer = document.getElementById("result-container");
 const detailContainer = document.getElementById("detail-container");
-const seeMoreBtn = document.getElementById("see-more-btn");
+const showBtn = document.getElementById("see-more-btn");
 const loader = document.getElementById("loader");
 const message = document.getElementById("message");
 
@@ -165,9 +165,9 @@ const displaySearchData = (items) => {
     });
 
     if (resultContainer.childNodes.length === 20) {
-        seeMoreBtn.style.display = "block";
+        showBtn.style.display = "block";
     } else {
-        seeMoreBtn.style.display = "none";
+        showBtn.style.display = "none";
     }
 };
 
@@ -197,7 +197,7 @@ const displayAllResult = (items) => {
 
 // load all search result
 const loadAllData = () => {
-    seeMoreBtn.style.display = "none";
+    showBtn.style.display = "none";
     const text = input.value.toLowerCase();
 
     fetch(`https://openapi.programming-hero.com/api/phones?search=${text}`)
