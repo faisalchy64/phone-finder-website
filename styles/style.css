@@ -12,6 +12,11 @@ p {
 }
 
 /* header component */
+#brand {
+    color: #009578;
+    font-weight: 700;
+}
+
 #search-btn {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
