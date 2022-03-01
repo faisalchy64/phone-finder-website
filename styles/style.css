@@ -1,18 +1,50 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Poppins", sans-serif;
+}
+
+p {
+    font-size: 14px;
 }
 
 /* header component */
 #search-btn {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    background: #17202a;
+    color: #fdfefe;
 }
 
 /* main component */
+#loader {
+    display: none;
+}
+
+#message {
+    display: none;
+}
+
 .card {
     border-radius: 25px;
 }
 
 #see-more-btn {
     display: none;
+}
+
+.spec-name {
+    margin-right: 10px;
+}
+
+.detail {
+    background: #17202a;
+    color: #fdfefe;
+    border-radius: 25px;
+}
+
+.detail:hover {
+    color: #ecf0f1;
 }
