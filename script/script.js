@@ -23,8 +23,7 @@ const searchInput = () => {
 
 // display detail result
 const displayDetailData = (item) => {
-    document.getElementById("loader").style.display = "none";
-    console.log(item.others);
+    loader.style.display = "none";
     const div = document.createElement("div");
     div.classList.add("col-lg-4", "col-md-6");
 
@@ -136,6 +135,7 @@ const displaySearchData = (items) => {
     loader.style.display = "none";
 
     if (items.length === 0) {
+        detailContainer.textContent = "";
         message.style.display = "block";
     } else {
         message.style.display = "none";
