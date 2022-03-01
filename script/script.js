@@ -23,6 +23,7 @@ const searchInput = () => {
 
 // display detail result
 const displayDetailData = (item) => {
+    console.log(item);
     loader.style.display = "none";
     const div = document.createElement("div");
     div.classList.add("col-lg-4", "col-md-6");
@@ -47,6 +48,10 @@ const displayDetailData = (item) => {
                     <p class="d-flex">
                         <span class="mb-1 text-danger spec-name">Display:</span>
                         <span>${item.mainFeatures.displaySize.toUpperCase()}</span>
+                    </p>
+                    <p class="d-flex">
+                        <span class="mb-1 text-danger spec-name">Chipset:</span>
+                        <span>${item.mainFeatures.chipSet.toUpperCase()}</span>
                     </p>
                     <p class="d-flex">
                         <span class="mb-1 text-danger spec-name">Storage / Memory:</span>
