@@ -23,7 +23,6 @@ const searchInput = () => {
 
 // display detail result
 const displayDetailData = (item) => {
-    console.log(item);
     loader.style.display = "none";
     const div = document.createElement("div");
     div.classList.add("col-lg-4", "col-md-6");
